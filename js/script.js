@@ -13,3 +13,13 @@ const swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+let btn = document.querySelector(".header-general__btn")
+btn.addEventListener("click" ,() =>{
+    document.querySelector(".header-general__modal").style.display ="block"
+})
+
+let btnClose = document.querySelector(".header-general__modal__block__square h1")
+btnClose.addEventListener("click" ,() =>{
+    document.querySelector(".header-general__modal").style.display ="none"
+})

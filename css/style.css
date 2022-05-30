@@ -1,3 +1,7 @@
+html.body {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -68,9 +72,14 @@ h3 {
 }
 
 #header {
-  background: rgba(0, 0, 0, 0.06);
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.16);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 #header .header-general {
+  animation: bg 2s alternate;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,9 +113,10 @@ h3 {
 #header .header-general .header-general__btn button:hover {
   transform: scale(1.1);
 }
-#header .header-general .header-general__btn img {
+#header .header-general img {
   text-align: center;
   cursor: pointer;
+  margin-right: 40px;
   padding: 0 10px;
 }
 #header .header-general .header-general__product .header-general__nav {
@@ -133,6 +143,61 @@ h3 {
   text-align: center;
   font-size: 30px;
   color: #173A56;
+}
+#header .header-general .header-general__modal {
+  display: none;
+}
+#header .header-general .header-general__modal .header-general__modal__block {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .header-general .header-general__modal .header-general__modal__block .header-general__modal__block__square {
+  width: 700px;
+  height: 340px;
+  background: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+  position: relative;
+  animation: key 0.4s alternate linear;
+}
+@keyframes key {
+  0% {
+    transform: scale(0.1);
+  }
+}
+#header .header-general .header-general__modal .header-general__modal__block .header-general__modal__block__square h1 {
+  color: red;
+  font-family: sans-serif;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: 0.4s;
+}
+#header .header-general .header-general__modal .header-general__modal__block .header-general__modal__block__square h1:hover {
+  transform: scale(1.4);
+}
+#header .header-general .header-general__modal .header-general__modal__block .header-general__modal__block__square input {
+  width: 90%;
+  height: 40px;
+  margin: 10px 20px;
+}
+#header .header-general .header-general__modal .header-general__modal__block .header-general__modal__block__square button {
+  width: 60%;
+  height: 40px;
+  padding-left: 30px;
+  margin: 10px 20px;
 }
 
 #hero .hero-general {
@@ -594,7 +659,7 @@ h3 {
   margin-top: 40px;
 }
 #say .say-general p {
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

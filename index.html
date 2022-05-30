@@ -10,6 +10,7 @@
             rel="stylesheet"
             href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,24 +18,35 @@
 <header id="header">
     <div class="container">
         <div class="header-general">
-            <div class="header-general__pro">
-                <a href="index.html" class="header-general__prod"> <img src="./img/header1.png"> Product</a>
+            <div class="header-general__pro" data-aos="zoom-in-up">
+                <a href="index.html" class="header-general__prod"> <img src="./img/product.png" data-tilt=""></a>
 
             </div>
 
-            <div class="header-general__product">
+            <div class="header-general__product" data-aos="zoom-in-up" data-tilt="">
                 <a href="#you" class="header-general__nav">Product</a>
                 <a href="#management" class="header-general__nav">Customers</a>
                 <a href="#content" class="header-general__nav">Pricing</a>
                 <a href="#say" class="header-general__nav">Resources</a>
             </div>
 
-            <div class="header-general__btn">
+            <div class="header-general__btn" data-aos="zoom-in-up" data-tilt="">
                 <input type="text" placeholder="Sign In">
                 <button>Sign In</button>
-                <img src="./img/header2.png" alt="">
-
             </div>
+
+            <div class="header-general__modal">
+                <div class="header-general__modal__block">
+                    <div class="header-general__modal__block__square">
+                        <h1>X</h1>
+                        <input type="datetime-local">
+                        <input type="number">
+
+                        <button>Send</button>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/header2.png" alt="">
         </div>
     </div>
 </header>
@@ -42,7 +54,9 @@
 <section id="hero">
     <div class="container">
         <div class="hero-general">
-            <div class="hero-general__work" data-aos="zoom-in-down">
+            <div class="hero-general__work"  data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000" data-tilt="">
                 <h1>Work at the speed
                     <br>of thought</h1>
                 <p>Tools, tutorials, design and innovation experts, all <br>in one place! The most intuitive way to
@@ -51,7 +65,9 @@
                 <button>Get started</button>
                 <input type="text" placeholder="Watch the Video">
             </div>
-            <div class="hero-general__works">
+            <div class="hero-general__works"  data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000" data-tilt="">
                 <img src="./img/hero1.png" alt="">
             </div>
         </div>
@@ -68,25 +84,33 @@
             </div>
 
             <div class="you-general__fir">
-                <div class="you-general__first">
+                <div class="you-general__first"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <img src="./img/icon1.png" alt="">
                     <h3>First click tests</h3>
                     <p>While most people enjoy <br>casino gambling,</p>
                 </div>
 
-                <div class="you-general__first">
+                <div class="you-general__first"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <img src="./img/icon2.png" alt="">
                     <h3>Design surveys</h3>
                     <p>Sports betting, lottery and <br>bingo playing for the fun</p>
                 </div>
 
-                <div class="you-general__first">
+                <div class="you-general__first"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <img src="./img/icon3.png" alt="">
                     <h3>Preference tests</h3>
                     <p>The Myspace page defines <br>the individual.</p>
                 </div>
 
-                <div class="you-general__first">
+                <div class="you-general__first"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <img src="./img/icon4.png" alt="">
                     <h3>Five second tests</h3>
                     <p>Personal choices and the <br>overall personality of the <br>person. </p>
@@ -100,7 +124,8 @@
 
 <section id="management">
     <div class="container">
-        <div class="management-general">
+        <div class="management-general" data-aos="fade-up"
+             data-aos-duration="3000">
 
             <div class="management-general__effo">
                 <h4>Effortless Validation for</h4>
@@ -124,7 +149,8 @@
 
 <section id="customer">
     <div class="container">
-        <div class="customer-general">
+        <div class="customer-general" data-aos="fade-up"
+             data-aos-duration="3000">
 
             <div class="customer-general__sup">
                 <img src="./img/customer.png" alt="">
@@ -158,7 +184,8 @@
 
 <section id="colla">
     <div class="container">
-        <div class="colla-general">
+        <div class="colla-general" data-aos="fade-up"
+             data-aos-duration="3000">
 
             <div class="colla-general__effo">
                 <h4>Optimisation for</h4>
@@ -190,12 +217,16 @@
                     <br>prototyping, marketing strategy, landing page, Ux/UI?</p>
             </div>
 
-            <div class="process-general__take">
+            <div class="process-general__take"  data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
                 <img src="./img/process2.png" alt="">
                 <img src="./img/process3.png" alt="">
             </div>
 
-            <div class="process-general__takes">
+            <div class="process-general__takes"  data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
                 <img src="./img/process4.png" alt="">
                 <img src="./img/process5.png" alt="">
             </div>
@@ -215,21 +246,27 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="content-general__increasing">
+                        <div class="content-general__increasing"  data-aos="flip-left"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="2000">
                             <img src="./img/content1.png" alt="">
                             <p>By Wahid Ari | 03 March 2019</p>
                             <h3>Increasing Prosperity <br>With Positive Thinking</h3>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="content-general__increasing">
+                        <div class="content-general__increasing"  data-aos="flip-left"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="2000">
                             <img src="./img/content2.png" alt="">
                             <p>By Wahid Ari | 03 March 2019</p>
                             <h3>Motivation Is The First <br>Step To Success</h3>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="content-general__increasing">
+                        <div class="content-general__increasing"  data-aos="flip-left"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="2000">
                             <img src="./img/content3.png" alt="">
                             <p>By Wahid Ari | 03 March 2019</p>
                             <h3>Success Steps For Your <br>Personal Or Business</h3>
@@ -279,7 +316,9 @@
             </div>
 
             <div class="table-general__free">
-                <div class="table-general__standart">
+                <div class="table-general__standart"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <h2>Free</h2>
                     <p>Brief price description</p>
                     <img src="./img/tabl1.png" alt="">
@@ -290,7 +329,9 @@
 
                 </div>
 
-                <div class="table-general__standartet">
+                <div class="table-general__standartet"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <h2>Standard</h2>
                     <p>Brief price description</p>
                     <img src="./img/table2.png" alt="">
@@ -301,7 +342,9 @@
 
                 </div>
 
-                <div class="table-general__standart">
+                <div class="table-general__standart"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <h2>Premium</h2>
                     <p>Brief price description</p>
                     <img src="./img/table3.png" alt="">
@@ -325,7 +368,9 @@
             <p>Problems trying to resolve the conflict between
                 <br>the two major realms of Classical physics: Newtonian mechanics </p>
             <div class="say-general__block">
-                <div class="say-general__clients">
+                <div class="say-general__clients"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <img src="./img/say1.png" alt="">
 
                     <p>Product helps you see how many
@@ -335,7 +380,9 @@
 
                 </div>
 
-                <div class="say-general__clients">
+                <div class="say-general__clients"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <img src="./img/say1.png" alt="">
 
                     <p>Product helps you see how many
@@ -345,7 +392,9 @@
 
                 </div>
 
-                <div class="say-general__clients">
+                <div class="say-general__clients"  data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
                     <img src="./img/say1.png" alt="">
 
                     <p>Product helps you see how many
@@ -362,7 +411,9 @@
 <section id="join">
     <div class="container">
         <div class="join-general">
-            <div class="join-general__block">
+            <div class="join-general__block"  data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
                 <h2>Join 100 Compannies who <br>boost their business with <br>Product</h2>
                 <img src="./img/join1.png" alt="">
                 <button>Get This</button>
@@ -374,7 +425,9 @@
 
 <footer id="legal">
     <div class="container">
-        <div class="legal-general">
+        <div class="legal-general"  data-aos="flip-left"
+             data-aos-easing="ease-out-cubic"
+             data-aos-duration="2000">
 
             <div class="legal-general__product">
                 <img src="./img/product.png" alt="">
@@ -384,7 +437,6 @@
                     <img src="./img/twitter.png" alt="">
                 </div>
             </div>
-
 
 
             <div class="legal-general__reso">
@@ -410,16 +462,19 @@
             </div>
         </div>
 
-<p>Made With Love By Figmaland All Right Reserved
-</p>
+        <p>Made With Love By Figmaland All Right Reserved
+        </p>
     </div>
 </footer>
+<script src="./js/3d.js"></script>
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script src="./js/3d.js"></script>
 <script src="./js/script.js"></script>
 
-
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
